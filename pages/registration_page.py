@@ -1,39 +1,41 @@
 from selenium.webdriver.common.by import By
 
-class KayıtOlmaSayfası:
+class RegistrationPage:
     def __init__(self, driver):
-        self.driver = driver  
+        self.driver = driver
 
-    def kayıt_olma_sayfa_başlıgı(self):
+    def get_page_title(self):
         return self.driver.title
-    
-    def cinsiyet_radio_button_erkek(self):
+
+    def get_male_radio_button(self):
         return self.driver.find_element(By.ID, "gender-male")
-    
-    def cinsiyet_radio_button_kadın(self):
+
+    def get_female_radio_button(self):
         return self.driver.find_element(By.ID, "gender-female")
-    
-    def isim_input(self):
+
+    def get_first_name_input(self):
         return self.driver.find_element(By.ID, "FirstName")
-    
-    def soyisim_input(self):
+
+    def get_last_name_input(self):
         return self.driver.find_element(By.ID, "LastName")
-    
-    def email_input(self):
+
+    def get_email_input(self):
         return self.driver.find_element(By.ID, "Email")
-    
-    def şifre_input(self):
+
+    def get_password_input(self):
         return self.driver.find_element(By.ID, "Password")
-    
-    def şifre_tekrar_input(self):
+
+    def get_confirm_password_input(self):
         return self.driver.find_element(By.ID, "ConfirmPassword")
-    
-    def kayıt_ol_button(self):
+
+    def get_register_button(self):
         return self.driver.find_element(By.ID, "register-button")
-    
-    def kayıt_başarılı_mesajı(self):
+
+    def get_success_message(self):
         return self.driver.find_element(By.CLASS_NAME, "result")
-    def kayıt_olma_başarılı_devam_et_button(self):
+
+    def get_success_continue_button(self):
         return self.driver.find_element(By.CLASS_NAME, "register-continue-button")
-    def belirtilen_email_kullanılıyor_hata_mesajı(self):
+
+    def get_email_exists_error_message(self):
         return self.driver.find_element(By.CLASS_NAME, "validation-summary-errors")
