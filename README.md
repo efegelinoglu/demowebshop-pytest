@@ -1,7 +1,7 @@
 # Selenium Paytest - Demo Web Shop Test Otomasyonu
 
 Bu proje, [Demo Web Shop](https://demowebshop.tricentis.com/) sitesi üzerinde **Selenium** ve **Pytest** kullanarak geliştirilmiş bir **test otomasyon projesidir**.  
-Amaç, kullanıcı kayıt süreçlerini, ana sayfa bileşenlerini ve form doğrulamalarını otomatik test senaryoları ile kontrol etmektir.
+
 
 ---
 
